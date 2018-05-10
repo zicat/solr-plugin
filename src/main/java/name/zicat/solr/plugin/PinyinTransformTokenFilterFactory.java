@@ -10,8 +10,6 @@ import org.apache.lucene.analysis.util.TokenFilterFactory;
  */
 public class PinyinTransformTokenFilterFactory extends TokenFilterFactory {
 
-    private boolean isFirstChar = false;
-    private boolean isOutChinese = true;
     private int minTermLenght = 2;
 
     public PinyinTransformTokenFilterFactory(Map<String, String> args) {

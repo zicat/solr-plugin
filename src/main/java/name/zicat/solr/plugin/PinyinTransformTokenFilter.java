@@ -12,7 +12,7 @@ import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.apache.lucene.analysis.tokenattributes.PositionIncrementAttribute;
 
 public class PinyinTransformTokenFilter extends TokenFilter {
-    private boolean isOutChinese = true;
+
     private final CharTermAttribute termAtt = addAttribute(CharTermAttribute.class);
     private final PositionIncrementAttribute positionIncrementAttribute = addAttribute(PositionIncrementAttribute.class);
     HanyuPinyinOutputFormat outputFormat = new HanyuPinyinOutputFormat();
